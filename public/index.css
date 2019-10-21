@@ -341,11 +341,12 @@ button {
 /* Card */
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 10px 20px;
 }
 .card .card-wrap {
-  width: 45%;
+  margin: 0 auto;
 }
 .card .card-title {
   color: #000;
@@ -354,11 +355,36 @@ button {
   color: #000;
 }
 .card .card-img {
-  width: 500px;
+  margin: 0 auto;
+  max-width: 500px;
 }
-.card-2 {
-  flex-direction: row-reverse;
-  text-align: end;
+@media (min-width: 800px) {
+  .card {
+    flex-direction: row;
+  }
+  .card .card-wrap {
+    width: 45%;
+  }
+}
+@media (min-width: 1000px) {
+  .card {
+    flex-direction: row;
+  }
+  .card .card-wrap {
+    width: 45%;
+  }
+}
+@media (min-width: 800px) {
+  .card-2 {
+    text-align: end;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  .card-2 {
+    text-align: end;
+    flex-direction: row-reverse;
+  }
 }
 /* List */
 .copyright {

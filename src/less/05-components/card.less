@@ -2,11 +2,13 @@
 
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   padding: 10px 20px;
+
   .card-wrap {
-    width: 45%;
+    margin: 0 auto;
   }
   .card-title {
     color: #000;
@@ -15,11 +17,15 @@
     color: #000;
   }
   .card-img {
-    width: 500px;
+    margin: 0 auto;
+    max-width: 500px;
   }
+
+  .media-tablet({flex-direction: row;.card-wrap {width: 45%;}});
+  .media-desktop({flex-direction: row;.card-wrap {width: 45%;}});
 }
 
 .card-2 {
-  flex-direction: row-reverse;
-  text-align: end;
+  .media-tablet({text-align: end;flex-direction: row-reverse;});
+  .media-desktop({text-align: end;flex-direction: row-reverse;});
 }
