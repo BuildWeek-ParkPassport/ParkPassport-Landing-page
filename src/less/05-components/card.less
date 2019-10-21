@@ -1,13 +1,25 @@
 /* Card */
+
 .card {
-  max-width: 400px;
-  width: 100%;
-  margin-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+
+  padding: 10px 20px;
+  .card-wrap {
+    width: 45%;
+  }
+  .card-title {
+    color: #000;
+  }
+  .card-content {
+    color: #000;
+  }
+  .card-img {
+    width: 500px;
+  }
 }
 
-.card-title {
-  font-size: 1.2rem;
-  .media-font-size(1.3rem, 1.5rem);
-  font-weight: bold;
-  margin-bottom: 1vw;
+.card-2 {
+  flex-direction: row-reverse;
+  text-align: end;
 }

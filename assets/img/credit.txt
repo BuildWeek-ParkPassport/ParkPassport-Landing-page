@@ -1,0 +1,5 @@
+file name: header-img.jpg
+credit: Photo by Kevin McConnell on Unsplash
+
+file name: logo.png
+credit: Photo by Itel Domingo from Lambda School
