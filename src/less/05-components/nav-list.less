@@ -2,7 +2,11 @@
 .nav-list {
   .nav-item {
     padding: 5px 7px;
-    border-radius: 5px;
+    border-radius: 11px;
+
+    &:hover {
+      color: @secondary;
+    }
   }
 
   .nav-item-1,
@@ -12,6 +16,14 @@
 
   .nav-item-signup,
   .nav-item-login {
-    background-color: @logo-color;
+    color: @fc;
+    background-color: @primary;
+    border: 3px solid @secondary;
+  }
+
+  .nav-item-signup:hover,
+  .nav-item-login:hover {
+    color: @fc;
+    background-color: @secondary;
   }
 }
