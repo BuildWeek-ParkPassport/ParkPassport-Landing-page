@@ -313,10 +313,24 @@ button {
 .nav-list .nav-item {
   padding: 5px 7px;
   color: #03dac5;
+  position: relative;
+  transition: color 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.nav-list .nav-item::after {
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #03dac5;
+  transform: scale(0);
 }
 .nav-list .nav-item:hover {
   color: #504e50;
-  border-bottom: 2px solid #03dac5;
+}
+.nav-list .nav-item:hover::after {
+  transform: scale(1);
 }
 .nav-list .nav-item:not(:last-child) {
   margin-right: 3vw;
@@ -380,9 +394,9 @@ button {
   color: #504e50;
   background-color: #fff;
   border: 3px solid #03dac5;
+  transition: background-color 0.2s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .card .card-btn:hover {
-  color: #504e50;
   background-color: #03dac5;
 }
 .card .card-action a {

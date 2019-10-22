@@ -3,9 +3,24 @@
   .nav-item {
     padding: 5px 7px;
     color: @secondary;
+    position: relative;
+    transition: color .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    &::after {
+      transition: transform .3s cubic-bezier(0.19, 1, 0.22, 1);
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid @secondary;
+      transform: scale(0);
+    }
+
     &:hover {
       color: @fc;
-      border-bottom: 2px solid @secondary;
+      &::after {     
+        transform: scale(1);
+      }
     }
   }
 

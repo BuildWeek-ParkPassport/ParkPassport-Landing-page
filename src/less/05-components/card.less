@@ -17,7 +17,7 @@
   .card-title {
   }
   .card-content {
-    margin: 15px 0;    
+    margin: 15px 0;
     padding: 0 15px;
   }
   .card-btn {
@@ -26,8 +26,9 @@
     color: @fc;
     background-color: @primary;
     border: 3px solid @secondary;
+    transition: background-color 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+
     &:hover {
-      color: @fc;
       background-color: @secondary;
     }
   }
