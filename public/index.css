@@ -382,6 +382,24 @@ button {
   justify-content: center;
   align-items: center;
 }
+.card .card-action a {
+  color: #000;
+  font-size: 2rem;
+}
+@media (min-width: 800px) {
+  .card .card-action a {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .card .card-action a {
+    font-size: 3rem;
+  }
+}
+.card .card-action span {
+  font-size: 2rem;
+  font-weight: bold;
+}
 .card .card-img {
   margin: 0 auto;
   max-width: 500px;
