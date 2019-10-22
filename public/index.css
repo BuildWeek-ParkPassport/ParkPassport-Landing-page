@@ -384,7 +384,7 @@ button {
 }
 .card .card-action a {
   color: #000;
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 @media (min-width: 800px) {
   .card .card-action a {
