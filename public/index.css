@@ -244,6 +244,7 @@ button {
 }
 .about {
   top: 100px;
+  position: absolute;
 }
 /* Navbar */
 .navbar {
@@ -347,12 +348,16 @@ button {
 /* Card */
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   padding: 10px 20px;
 }
 .card .card-wrap {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card .card-title {
   color: #000;
@@ -382,16 +387,15 @@ button {
 }
 @media (min-width: 800px) {
   .content-item:nth-child(2n) .card {
-    text-align: end;
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 1000px) {
   .content-item:nth-child(2n) .card {
-    text-align: end;
     flex-direction: row-reverse;
   }
 }
+/* About Card */
 /* List */
 .copyright {
   color: #000;

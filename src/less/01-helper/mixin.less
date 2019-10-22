@@ -25,6 +25,20 @@
   }
 }
 
+
+//mixin for media query max-width
+.media-mobile-max(@content) {
+  @media @breakpoint-mobile-max {
+    @content();
+  }
+}
+
+.media-tablet-max(@content) {
+  @media @breakpoint-tablet-max {
+    @content();
+  }
+}
+
 //mixin for media query
 .media-tablet(@content) {
   @media @breakpoint-tablet {
