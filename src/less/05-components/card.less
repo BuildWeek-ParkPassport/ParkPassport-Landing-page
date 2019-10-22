@@ -25,7 +25,9 @@
   .media-desktop({flex-direction: row;.card-wrap {width: 45%;}});
 }
 
-.card-2 {
-  .media-tablet({text-align: end;flex-direction: row-reverse;});
-  .media-desktop({text-align: end;flex-direction: row-reverse;});
+.content-item:nth-child(2n) {
+  .card {
+    .media-tablet({text-align: end;flex-direction: row-reverse;});
+    .media-desktop({text-align: end;flex-direction: row-reverse;});
+  }
 }

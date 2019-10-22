@@ -240,8 +240,6 @@ button {
 }
 .container {
   min-height: 100vh;
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 .about {
@@ -277,7 +275,6 @@ button {
   background-image: url("../assets/img/header-img.jpg");
   background-size: 100% 100%;
   height: 30vh;
-  position: relative;
 }
 @media only screen and (orientation: landscape) {
   .header {
@@ -384,13 +381,13 @@ button {
   }
 }
 @media (min-width: 800px) {
-  .card-2 {
+  .content-item:nth-child(2n) .card {
     text-align: end;
     flex-direction: row-reverse;
   }
 }
 @media (min-width: 1000px) {
-  .card-2 {
+  .content-item:nth-child(2n) .card {
     text-align: end;
     flex-direction: row-reverse;
   }
