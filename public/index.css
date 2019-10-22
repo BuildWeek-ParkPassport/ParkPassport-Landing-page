@@ -314,10 +314,10 @@ button {
   padding: 5px 7px;
   color: #03dac5;
   position: relative;
-  transition: color 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: color 0.3s ease-out;
 }
 .nav-list .nav-item::after {
-  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.3s ease-in;
   content: "";
   position: absolute;
   width: 100%;
