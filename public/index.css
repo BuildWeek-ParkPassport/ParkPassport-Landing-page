@@ -293,6 +293,11 @@ button {
 .content {
   margin-top: 100px;
 }
+@media (min-width: 1000px) {
+  .content {
+    margin-top: 200px;
+  }
+}
 /* Nav List */
 .nav-list .nav-item {
   padding: 5px 7px;
