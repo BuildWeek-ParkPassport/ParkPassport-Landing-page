@@ -453,10 +453,6 @@ button {
 .card .card-img {
   margin: 10px auto;
   max-width: 500px;
-  display: flex;
-}
-.card .card-img img {
-  width: 250px;
 }
 @media (min-width: 800px) {
   .card {
@@ -485,6 +481,13 @@ button {
   }
 }
 /* About Card */
+.about .card .card-img {
+  max-width: 500px;
+  display: flex;
+}
+.about .card .card-img img {
+  width: 250px;
+}
 /* List */
 .copyright {
   height: 100px;
