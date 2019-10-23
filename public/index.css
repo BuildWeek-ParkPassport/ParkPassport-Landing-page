@@ -2,6 +2,7 @@
 /* font family */
 /* Theme Color */
 /* Color Palette */
+/* NavList */
 /* Footer */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -251,9 +252,18 @@ button {
   min-height: 100vh;
   width: 100%;
 }
-.about {
-  top: 100px;
-  position: absolute;
+.index {
+  margin-top: 80px;
+}
+@media (min-width: 800px) {
+  .index {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .index {
+    margin-top: 100px;
+  }
 }
 /* Navbar */
 .navbar {
@@ -266,7 +276,7 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 0 10px 10px rgba(3, 218, 197, 0.5);
+  box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
   padding: 0 15px;
 }
 @media (min-width: 800px) {
@@ -283,9 +293,10 @@ button {
 }
 .header {
   background-repeat: no-repeat;
-  background-image: url("../assets/img/header-img.jpg");
+  background-image: url(https://media.giphy.com/media/VJliYicSv0kbnAjpCO/giphy.gif), url(http://s14.directupload.net/images/111129/44ga9qid.png);
   background-size: 100% 100%;
   height: 30vh;
+  overflow: hidden;
 }
 @media only screen and (orientation: landscape) {
   .header {
@@ -312,25 +323,23 @@ button {
 /* Nav List */
 .nav-list .nav-item {
   padding: 5px 7px;
-  color: #03dac5;
+  color: #504e50;
   position: relative;
-  transition: color 0.3s ease-out;
 }
 .nav-list .nav-item::after {
-  transition: transform 0.3s ease-in;
   content: "";
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
-  border-bottom: 2px solid #03dac5;
-  transform: scale(0);
+  border-bottom: 2px solid #504e50;
+  visibility: hidden;
 }
 .nav-list .nav-item:hover {
-  color: #504e50;
+  color: #03dac5;
 }
 .nav-list .nav-item:hover::after {
-  transform: scale(1);
+  visibility: visible;
 }
 .nav-list .nav-item:not(:last-child) {
   margin-right: 3vw;
@@ -342,23 +351,23 @@ button {
 .intro {
   padding: 20px 15px;
   position: absolute;
-  top: 100px;
+  top: 23%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 800px) {
   .intro {
-    top: 150px;
+    top: 40%;
     height: auto;
-    max-width: 400px;
+    max-width: 430px;
     padding: 20px 50px;
     margin-left: 100px;
   }
 }
 @media (min-width: 1000px) {
   .intro {
-    top: 300px;
+    top: 40%;
     height: auto;
-    max-width: 400px;
+    max-width: 430px;
     padding: 20px 80px;
     margin-left: 100px;
   }
@@ -390,14 +399,23 @@ button {
 }
 .card .card-btn {
   cursor: pointer;
-  border-radius: 11px;
-  color: #504e50;
-  background-color: #fff;
-  border: 3px solid #03dac5;
-  transition: background-color 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  /* btn design credit to
+       https://www.fabriziovanmarciano.com/button-styles/ 
+    */
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
 }
 .card .card-btn:hover {
-  background-color: #03dac5;
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
 }
 .card .card-action a {
   color: #000;
