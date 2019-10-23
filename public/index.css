@@ -267,6 +267,9 @@ button {
     margin-top: 100px;
   }
 }
+.about {
+  overflow: hidden;
+}
 /* Navbar */
 .navbar {
   z-index: 1;
