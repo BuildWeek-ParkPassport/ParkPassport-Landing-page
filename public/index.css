@@ -431,7 +431,11 @@ button {
     font-size: 3rem;
   }
 }
+.card .card-action a:not(:last-child) {
+  margin-right: 9px;
+}
 .card .card-action span {
+  margin: 0 30px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -468,7 +472,7 @@ button {
 /* About Card */
 /* List */
 .copyright {
-  height: 200px;
+  height: 100px;
   background-color: #5bcda6;
   display: flex;
   justify-content: center;
