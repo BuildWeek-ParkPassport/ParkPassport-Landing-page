@@ -1,0 +1,25 @@
+/* Intro */
+
+.intro {
+  padding: 20px 15px;
+  position: absolute;
+  top: 27%;
+
+  .media-tablet(
+    {top: 30%;height: auto; max-width: 430px;padding: 20px 50px; margin-left: 100px;}
+  );
+  .media-desktop(
+    {top: 33%;height: auto;max-width: 430px;padding: 20px @body-padding; margin-left:
+      100px;}
+  );
+
+  .intro-title {
+    color: @color-1;
+  }
+  .intro-content {
+    color: @color-1;
+    margin-top: 20px;
+  }
+
+  background-color: rgba(0, 0, 0, 0.5);
+}

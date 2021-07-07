@@ -1,0 +1,37 @@
+file name: header-img.jpg
+credit: Photo by Kevin McConnell on Unsplash
+
+file name: logo.png
+credit: Photo by Itel Domingo from Lambda School
+
+file name: img-1.png
+Photo by Phil Goodwin
+https://unsplash.com/photos/Ys85uMksDHc
+
+file: img-2.png
+Photo by Robert Bye
+https://unsplash.com/photos/4hcpIbqQM8c
+
+file: img-3.png
+Photo by Nerea Martí Sesarino
+https://unsplash.com/photos/_NpSkRaTy0A
+
+file: about-backend.jpg
+Photo by Taylor Vick
+https://unsplash.com/photos/aWslrFhs1w4/share
+
+file: about-team.jpg
+Photo by Marvin Meyer
+https://unsplash.com/photos/SYTO3xs06fU/share
+
+file: about-ui.jpg
+Photo by Sai Kiran Anagani
+https://unsplash.com/photos/5Ntkpxqt54Y
+
+file:about-react.jpg
+Photo by Filiberto Santillán
+https://unsplash.com/photos/1HCb2gPk3ik
+
+file:about-react2.jpg
+Photo by Fabian Grohs
+https://unsplash.com/photos/zE007SNgcdE

@@ -1,0 +1,521 @@
+/* font color */
+/* font family */
+/* Theme Color */
+/* Color Palette */
+/* NavList */
+/* Footer */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
+}
+img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+}
+button {
+  outline: none;
+  border: none;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCQYag.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYag.ttf) format('truetype');
+}
+body {
+  color: #504e50;
+  font-family: "Roboto Condensed", sans-serif;
+}
+h1 {
+  color: #504e50;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media (min-width: 800px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+h2 {
+  color: #504e50;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (min-width: 800px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+p {
+  color: #504e50;
+  font-size: 1rem;
+}
+@media (min-width: 800px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1000px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+a {
+  color: #e9ecef;
+  font-size: 0.8rem;
+}
+@media (min-width: 800px) {
+  a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
+button {
+  font-size: 1.1rem;
+}
+@media (min-width: 800px) {
+  button {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 1000px) {
+  button {
+    font-size: 1.25rem;
+  }
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.index {
+  margin-top: 80px;
+}
+@media (min-width: 800px) {
+  .index {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .index {
+    margin-top: 100px;
+  }
+}
+.about {
+  overflow: hidden;
+}
+/* Navbar */
+.navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
+  padding: 0 15px;
+}
+@media (min-width: 800px) {
+  .navbar {
+    height: 100px;
+    padding: 0 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .navbar {
+    height: 100px;
+    padding: 0 80px;
+  }
+}
+.header {
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/bg.gif");
+  background-size: 100% 100%;
+  height: 30vh;
+  position: relative;
+}
+.header .bg {
+  height: 100%;
+}
+.header .bg .bg-img {
+  height: 100%;
+}
+@media only screen and (orientation: landscape) {
+  .header {
+    height: 100vh;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 599px) and (min-height: 599px) {
+  .header {
+    height: 100vh;
+  }
+}
+/* Content */
+.content {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1000px) {
+  .content {
+    margin-top: 200px;
+    width: 80%;
+  }
+}
+.footer {
+  margin-top: auto;
+}
+/* Nav List */
+.nav-list .nav-item {
+  padding: 5px 7px;
+  color: #504e50;
+  position: relative;
+}
+.nav-list .nav-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #504e50;
+  visibility: hidden;
+}
+.nav-list .nav-item:hover {
+  color: #03dac5;
+}
+.nav-list .nav-item:hover::after {
+  visibility: visible;
+}
+.nav-list .nav-item:not(:last-child) {
+  margin-right: 3vw;
+}
+.logo .logo-img {
+  max-width: 130px;
+}
+@media (min-width: 1000px) {
+  .logo .logo-img {
+    max-width: 150px;
+  }
+}
+/* Intro */
+.intro {
+  padding: 20px 15px;
+  position: absolute;
+  top: 27%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 800px) {
+  .intro {
+    top: 30%;
+    height: auto;
+    max-width: 430px;
+    padding: 20px 50px;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .intro {
+    top: 33%;
+    height: auto;
+    max-width: 430px;
+    padding: 20px 80px;
+    margin-left: 100px;
+  }
+}
+.intro .intro-title {
+  color: #e9ecef;
+}
+.intro .intro-content {
+  color: #e9ecef;
+  margin-top: 20px;
+}
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 10px 20px;
+}
+.card .card-wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-content {
+  margin: 15px 0;
+  padding: 0 15px;
+}
+.card .card-btn {
+  cursor: pointer;
+  /* btn design credit to
+       https://www.fabriziovanmarciano.com/button-styles/ 
+    */
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+.card .card-btn:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+}
+.card .card-action a {
+  color: #000;
+  font-size: 2rem !important;
+}
+@media (min-width: 800px) {
+  .card .card-action a {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .card .card-action a {
+    font-size: 3rem;
+  }
+}
+.card .card-action a:not(:last-child) {
+  margin-right: 9px;
+}
+.card .card-action span {
+  margin: 0 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card .card-img {
+  margin: 10px auto;
+  max-width: 500px;
+}
+@media (min-width: 800px) {
+  .card {
+    flex-direction: row;
+  }
+  .card .card-wrap {
+    width: 45%;
+  }
+}
+@media (min-width: 1000px) {
+  .card {
+    flex-direction: row;
+  }
+  .card .card-wrap {
+    width: 45%;
+  }
+}
+@media (min-width: 800px) {
+  .content-item:nth-child(2n) .card {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  .content-item:nth-child(2n) .card {
+    flex-direction: row-reverse;
+  }
+}
+/* About Card */
+.about .card .card-img {
+  max-width: 500px;
+  display: flex;
+}
+.about .card .card-img img {
+  width: 250px;
+}
+/* List */
+.copyright {
+  height: 100px;
+  background-color: #5bcda6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright a {
+  color: #504e50;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (min-width: 800px) {
+  .copyright a {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .copyright a {
+    font-size: 1.5rem;
+  }
+}
